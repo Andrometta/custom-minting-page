@@ -18,7 +18,7 @@ import { useState } from 'react';
 import styles from '../styles/Theme.module.css';
 
 // Put Your NFT Drop Contract address from the dashboard here
-const myNftDropContractAddress = '0x322067594DBCE69A9a9711BC393440aA5e3Aaca1';
+const myNftDropContractAddress = '0x759b6028Dbf7D6e331d65b27a93fF6fc60af36d8';
 
 const Home: NextPage = () => {
   const nftDrop = useNFTDrop(myNftDropContractAddress);
@@ -31,7 +31,7 @@ const Home: NextPage = () => {
   const [, switchNetwork] = useNetwork();
 
   // The amount the user claims
-  const [quantity, setQuantity] = useState(1); // default to 1
+  const [quantity, setQuantity] = useState(2); // default to 1
 
   // Load contract metadata
   const { data: contractMetadata } = useContractMetadata(
